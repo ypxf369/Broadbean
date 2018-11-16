@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yp.swagger</groupId>
-    <artifactId>broadbean-starter-swagger</artifactId>
+    <groupId>com.yp.parent</groupId>
+    <artifactId>broadbean-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>broadbean-starter-swagger</name>
-    <description>swagger doc layer</description>
+    <name>broadbean-starter</name>
+    <description>broadbean parent</description>
 
     <parent>
         <groupId>com.yp</groupId>
@@ -18,23 +18,34 @@
     </parent>
 
     <dependencies>
+        <!-- core -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.yp.core</groupId>
+            <artifactId>broadbean-starter-core</artifactId>
+            <version>${broadbean.version}</version>
         </dependency>
 
+        <!-- cache -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>com.yp.cache</groupId>
+            <artifactId>broadbean-starter-cache</artifactId>
+            <version>${broadbean.version}</version>
+        </dependency>
+
+        <!-- security -->
+        <dependency>
+            <groupId>com.yp.security</groupId>
+            <artifactId>broadbean-starter-security</artifactId>
+            <version>${broadbean.version}</version>
         </dependency>
 
         <!-- swagger -->
         <dependency>
-            <groupId>com.spring4all</groupId>
-            <artifactId>swagger-spring-boot-starter</artifactId>
-            <version>1.8.0.RELEASE</version>
+            <groupId>com.yp.swagger</groupId>
+            <artifactId>broadbean-starter-swagger</artifactId>
+            <version>${broadbean.version}</version>
         </dependency>
+
     </dependencies>
 
     <build>

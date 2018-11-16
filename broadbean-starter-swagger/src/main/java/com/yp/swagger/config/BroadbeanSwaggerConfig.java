@@ -1,6 +1,5 @@
 package com.yp.swagger.config;
 
-import com.spring4all.swagger.EnableSwagger2Doc;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -10,7 +9,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
  * Created by yepeng on 2018/11/16.
  */
 @Configuration
-@EnableSwagger2Doc
 @PropertySource(value = "classpath:application-swagger.properties")
 public class BroadbeanSwaggerConfig extends WebMvcConfigurationSupport {
     /**
