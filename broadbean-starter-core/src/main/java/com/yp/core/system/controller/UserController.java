@@ -5,6 +5,8 @@ import com.yp.core.constants.BaseEnums;
 import com.yp.core.system.dto.User;
 import com.yp.core.system.service.UserService;
 import com.yp.core.util.Results;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +19,7 @@ import java.util.List;
  * 用户Controller
  * Created by yepeng on 2018/11/14.
  */
+@Api(tags = "用户管理")
 @RequestMapping("sys/user")
 @RestController
 public class UserController {
@@ -48,6 +51,7 @@ public class UserController {
 //        userList.add(user2);
 //    }
 
+    @ApiOperation("查找所有用户")
     @GetMapping("queryAll")
     public Result queryAll() {
         List<User> list = userService.selectAll();
