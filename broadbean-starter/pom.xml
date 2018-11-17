@@ -22,6 +22,7 @@
         <module>broadbean-starter-cache</module>
         <module>broadbean-starter-security</module>
         <module>broadbean-starter-swagger</module>
+        <module>broadbean-starter-captcha</module>
     </modules>
 
     <dependencies>

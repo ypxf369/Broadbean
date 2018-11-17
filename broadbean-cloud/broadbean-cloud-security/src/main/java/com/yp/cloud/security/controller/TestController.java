@@ -1,4 +1,4 @@
-package com.yp.cloud.security;
+package com.yp.cloud.security.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

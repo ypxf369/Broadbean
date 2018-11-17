@@ -1,4 +1,4 @@
-package com.yp.cloud.security.core;
+package com.yp.cloud.security.core.userdetails;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
