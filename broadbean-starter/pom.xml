@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yp.parent</groupId>
+    <groupId>com.yp.starter</groupId>
     <artifactId>broadbean-starter</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>broadbean-starter</name>
-    <description>broadbean parent</description>
+    <description>broadbean starter</description>
 
     <parent>
         <groupId>com.yp</groupId>
@@ -17,34 +17,41 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <modules>
+        <module>broadbean-starter-core</module>
+        <module>broadbean-starter-cache</module>
+        <module>broadbean-starter-security</module>
+        <module>broadbean-starter-swagger</module>
+    </modules>
+
     <dependencies>
-        <!-- core -->
-        <dependency>
-            <groupId>com.yp.core</groupId>
-            <artifactId>broadbean-starter-core</artifactId>
-            <version>${broadbean.version}</version>
-        </dependency>
+        <!--&lt;!&ndash; core &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.yp.core</groupId>-->
+            <!--<artifactId>broadbean-starter-core</artifactId>-->
+            <!--<version>${broadbean.version}</version>-->
+        <!--</dependency>-->
 
-        <!-- cache -->
-        <dependency>
-            <groupId>com.yp.cache</groupId>
-            <artifactId>broadbean-starter-cache</artifactId>
-            <version>${broadbean.version}</version>
-        </dependency>
+        <!--&lt;!&ndash; startercache &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.yp.startercacheercache</groupId>-->
+            <!--<artifactId>broadbean-starter-startercache</artifactId>-->
+            <!--<version>${broadbean.version}</version>-->
+        <!--</dependency>-->
 
-        <!-- security -->
-        <dependency>
-            <groupId>com.yp.security</groupId>
-            <artifactId>broadbean-starter-security</artifactId>
-            <version>${broadbean.version}</version>
-        </dependency>
+        <!--&lt;!&ndash; security &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.yp.security</groupId>-->
+            <!--<artifactId>broadbean-starter-security</artifactId>-->
+            <!--<version>${broadbean.version}</version>-->
+        <!--</dependency>-->
 
-        <!-- swagger -->
-        <dependency>
-            <groupId>com.yp.swagger</groupId>
-            <artifactId>broadbean-starter-swagger</artifactId>
-            <version>${broadbean.version}</version>
-        </dependency>
+        <!--&lt;!&ndash; swagger &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>com.yp.swagger</groupId>-->
+            <!--<artifactId>broadbean-starter-swagger</artifactId>-->
+            <!--<version>${broadbean.version}</version>-->
+        <!--</dependency>-->
 
     </dependencies>
 

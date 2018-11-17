@@ -50,10 +50,6 @@
 
     <modules>
         <module>broadbean-starter</module>
-        <module>broadbean-starter-core</module>
-        <module>broadbean-starter-cache</module>
-        <module>broadbean-starter-security</module>
-        <module>broadbean-starter-swagger</module>
     </modules>
 
     <build>
